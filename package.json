@@ -1,0 +1,28 @@
+{
+  "name": "websocketchat",
+  "version": "1.0.0",
+  "description": "1. Set Backend :  Database, WebSocket\r 2. Set Frontend : Websocket\r 3. Test Connection Backend and Frontend \r 4. Sign in Function\r 5. Test Sending and Recieving Messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktyeon/WebSocketChat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktyeon/WebSocketChat/issues"
+  },
+  "homepage": "https://github.com/ktyeon/WebSocketChat#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.1.0",
+    "socket.io": "^4.7.4"
+  }
+}
