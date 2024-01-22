@@ -7,12 +7,13 @@ const httpServer = createServer(app);
 const io = new Server(httpServer,{
     
     cors:{
+        //origin:"http://127.0.0.1:3000",
         origin:"http://localhost:3000",
     },
 
 });
 
 require("./utils/io")(io);
-httpServer.listen(precoesss.env.PORT, () => {
-    console.log("server listening on port", processs.env.PORT);
+httpServer.listen(process.env.PORT, () => {
+    console.log("server listening on port", process.env.PORT);
 });
