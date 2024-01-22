@@ -1,8 +1,9 @@
 // This is the Schema to explain and disturibe the user data types with name 
 
-const mongoos = require("mongoose");
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
+
     name : {
         // user name
         type : String,
@@ -22,4 +23,4 @@ const userSchema = new mongoose.Schema({
 
 });
 
-module.exports = mongoos.model("User", userSchema);
+module.exports = mongoose.model("User", userSchema);
