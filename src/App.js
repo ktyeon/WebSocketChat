@@ -1,4 +1,5 @@
 import "./App.css";
+import socket from "./server";
 
 function App() {
   return (
