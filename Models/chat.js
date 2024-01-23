@@ -1,6 +1,6 @@
-// It is the Schema to explain and disturibe the chat data type
+// It is the Schema to explain and distribute the chat data type
 
-const mongoose = requrie ("mongoose");
+const mongoose = require("mongoose");
 
 const chatSchema = new mongoose.Schema(
     {
@@ -8,13 +8,13 @@ const chatSchema = new mongoose.Schema(
         // message
         user: {
             id: {
-                type:mongoose.Schema.ObjectId,
+                type: mongoose.Schema.ObjectId,
                 ref: "User",
             },
-            name : String,
+            name: String,
         },
     },
-    {timestamp : true}
+    { timestamps: true }
 );
 
-module.exports = mongoose.model ("Chat", chatSchema);
+module.exports = mongoose.model("Chat", chatSchema);

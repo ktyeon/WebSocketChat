@@ -25,8 +25,14 @@ userController.saveUser = async (userName, sid) => {
   } catch (error) {
 
     throw new Error(`Error saving user: ${error.message}`);
-    
+
   }
 };
 
+
+userController.checkUser =async (sid) =>{
+    const user = await User.findOne({token:sid})
+    if(!user ) throw new Error (" user not founded" )
+    return user;
+}
 module.exports = userController;
